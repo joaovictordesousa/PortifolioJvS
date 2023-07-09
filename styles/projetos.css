@@ -1,0 +1,128 @@
+/* --------- Projeto ----------------- */
+body {
+    background: url(../assets/imagem_fundo_projetos.jpg);
+}
+
+.controle__resmas {
+    text-align: center;
+}
+
+.novacap__titulo {
+    padding: 1em;
+    color: dodgerblue;
+}
+
+.linguagens_usadas {
+    font-size: 20px;
+    color: red;
+}
+
+.wrapper_celular {
+    display: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 40%;
+}
+
+#mainPhoto {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.imgCarosel {
+    width: 100px;
+    height: 110px;
+    transition: 0.3s;
+}
+
+.imgCarosel:hover {
+    width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    margin: 3px;
+}
+
+.img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.divisao_com_cor {
+    padding: 1em 0;
+    background-color: rgb(3, 3, 3);
+    margin: 1em 0;
+}
+
+.titulo_crud_js {
+    text-align: center;
+    font-size: 30px;
+    margin: 5em 0 0 0;
+    color: dodgerblue;
+}
+
+.imagem_crud_js {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.imagem_crud_js img:hover {
+    border: 4px solid dodgerblue;
+    transition: all 0.5s ease;
+    padding: 5px;
+}
+
+.para_ver {
+    font-size: 17px;
+    color: grey;
+}
+
+.rodape__projetos {
+    padding: 50em 0 0 0;
+ }
+
+@media (max-width: 1200px) {
+    /* -- projetos  --  */
+
+    .novacap__titulo {
+        text-align: center;
+    }
+    
+    .empresa__projeto {
+        width: 90%;
+        text-align: center;
+    }
+
+    .wrapper_celular {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .imgCaroselCelular {
+        width: 80%;
+        margin: 5px 0 0 40px;
+    }
+
+    #mainPhoto {
+        width: 80%;
+        margin: 5px 0 0 40px;
+    }
+
+    .imagem_crud_js {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+     .rodape__projetos {
+        padding: 19em 0 0 0;
+        width: 100%;
+     }
+
+}
