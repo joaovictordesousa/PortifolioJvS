@@ -1,14 +1,19 @@
-let images = Array.from(document.getElementsByClassName("imgCarosel"));
-let mainPhoto = document.getElementById("mainPhoto");
-let initialMainPhotoSrc = mainPhoto.src;
+const saida = document.querySelector(".saida");
 
-function updateImage(event) {
-    let image = event.target;
-    let tempSrc = mainPhoto.src;
-    mainPhoto.src = image.src;
-    image.src = tempSrc;
+function digitacao(texto, contador) {
+  if (contador < texto.length) {
+    setTimeout(() => {
+      saida.textContent += texto.charAt(contador);
+      contador++;
+      digitacao(texto, contador);
+    }, 80);
+  } else {
+    // Reiniciar a animação após completar
+    setTimeout(() => {
+      saida.textContent = ""; // Limpa o conteúdo da saída
+      digitacao(texto, 0); // Reinicia a animação
+    }, 2000); // Intervalo após completar a animação
+  }
 }
 
-images.forEach(function(image) {
-    image.addEventListener("click", updateImage);
-});
+digitacao("Além disso, gostaria de ressaltar que possuo vários outros projetos disponíveis no GitHub. Fique à vontade para conferir e explorar! 🙃", 0);

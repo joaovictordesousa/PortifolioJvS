@@ -17,40 +17,6 @@ body {
     color: red;
 }
 
-.wrapper_celular {
-    display: none;
-}
-
-.wrapper {
-    margin: 0 auto;
-    width: 40%;
-}
-
-#mainPhoto {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.imgCarosel {
-    width: 100px;
-    height: 110px;
-    transition: 0.3s;
-}
-
-.imgCarosel:hover {
-    width: 110px;
-    height: 110px;
-    border: 2px solid white;
-    margin: 3px;
-}
-
-.img {
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 .divisao_com_cor {
     padding: 1em 0;
     background-color: rgb(3, 3, 3);
@@ -84,6 +50,66 @@ body {
     padding: 50em 0 0 0;
  }
 
+ .container_siscau {
+    margin: 5em 0;
+ }
+
+    #img_carrossel{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+.titulo_siscau {
+    font-size: 30px;
+    text-align: center;
+    color: dodgerblue;
+    margin: 10px 0;
+}
+
+.paragrafo_siscau {
+    font-size: 20px;
+    text-align: center;
+}
+
+.container_controle_resmas {
+    margin: 5em 0;
+}
+
+.saida {
+    font-size: 25px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* Estilização para o link com ícone do GitHub */
+
+.container_button_github {
+    margin: 5em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.github-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.github-link i {
+    margin-right: 8px;
+  }
+  
+  a.github-link:hover {
+    background-color: #555;
+  }
+  
+
 @media (max-width: 1200px) {
     /* -- projetos  --  */
 
@@ -94,25 +120,6 @@ body {
     .empresa__projeto {
         width: 90%;
         text-align: center;
-    }
-
-    .wrapper_celular {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .wrapper {
-        display: none;
-    }
-
-    .imgCaroselCelular {
-        width: 80%;
-        margin: 5px 0 0 40px;
-    }
-
-    #mainPhoto {
-        width: 80%;
-        margin: 5px 0 0 40px;
     }
 
     .imagem_crud_js {

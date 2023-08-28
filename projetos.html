@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt_br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="assets/logo.jpeg">
     <link rel="stylesheet" href="styles/style.css">
     <title>PortifolioJvS</title>
 </head>
+
 <body>
 
     <body>
@@ -41,11 +46,11 @@
                     </li>
                 </ul>
             </div>
-    </header>
-    
-<!-- ------------------------ Menu Hambúrguer --------------------------------------->
+        </header>
 
-       <!-- <header class="projetos">
+        <!-- ------------------------ Menu Hambúrguer --------------------------------------->
+
+        <!-- <header class="projetos">
                 <section class="apresentacao__conteudo_projetos">
                     <h1 class="titulo">Projetos</h1>
                     <p class="descricao_ribeiro">O site abaixo foi criado para uma Advogada  do Distrito Federal</p>
@@ -55,48 +60,49 @@
                     <p class="apresentacao_texto"></p>
                 </section>
         </header>  -->
-    <section class="apresentacao">
-        <section class="apresentacao__conteudo_projetos">
-            <h1 class="titulo">Projetos</h1>
-        </section>
-    </section>
-        
-        <section class="controle__resmas">
-            <div class="container__resmas">
-                <h2 class="novacap__titulo">CONTROLE DE RESMAS</h2>
-                <h3 class="empresa__projeto"><strong class="empresa">EMPRESA:</strong> Companhia Urbanizadora da Nova Capital do Brasil (NOVACAP)</h3>
-                <br>
-                <h4 class="linguagens_usadas"><strong>Linguagens usadas:</strong> PHP/Laravel</h4>
-            </div>
+        <section class="apresentacao">
+            <section class="apresentacao__conteudo_projetos">
+                <h1 class="titulo">Projetos</h1>
+            </section>
         </section>
 
-        <br><br><br>
-
-        <section>
-            
-            <div class="wrapper">
-                <img src="assets/remas1.jpeg" id="mainPhoto" alt="Imagem do controle de resmas">
-                
-                <div class="image-wrapper">
-                    <img src="assets/resmas2.jpeg" alt="Imagem controle" class="imgCarosel">
-                    <img src="assets/resmas3.jpeg" alt="Imagem controle" class="imgCarosel">
-                    <img src="assets/resmas4.jpeg" alt="Imagem controle" class="imgCarosel">
+        <section class="container_controle_resmas">
+            <div class="controle__resmas">
+                <div class="container__resmas">
+                    <h2 class="novacap__titulo">CONTROLE DE RESMAS</h2>
+                    <h3 class="empresa__projeto"><strong class="empresa">EMPRESA:</strong> Companhia Urbanizadora da
+                        Nova Capital do Brasil (NOVACAP)</h3>
+                    <br>
+                    <h4 class="linguagens_usadas"><strong>Linguagens usadas:</strong> PHP/Laravel</h4>
                 </div>
             </div>
-
-            <!-- Tamanho celular -->    
-
-            <div class="wrapper_celular">
-                <img src="assets/remas1.jpeg" id="mainPhoto" alt="Imagem do controle de resmas">
-                
-                <div class="image-wrapper-celular">
-                    <img src="assets/resmas2.jpeg" alt="Imagem controle" class="imgCaroselCelular">
-                    <img src="assets/resmas3.jpeg" alt="Imagem controle" class="imgCaroselCelular">
-                    <img src="assets/resmas4.jpeg" alt="Imagem controle" class="imgCaroselCelular">
+            <br>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/remas1.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/resmas2.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/resmas3.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/resmas4.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
-            <!-- Final celular -->
         </section>
 
         <!-- <section class="divisao_com_cor"><span>.</span></section> -->
@@ -105,17 +111,75 @@
 
             <h2 class="titulo_crud_js">Crud em JavaScript</h2><br>
             <div class="imagem_crud_js">
-                <a href="https://grud-java-script.vercel.app/"><img class="imagem_crud_js" src="assets/Imagem do crud js.png" alt="Crud"></a>
+                <a href="https://grud-java-script.vercel.app/"><img class="imagem_crud_js"
+                        src="assets/Imagem do crud js.png" alt="Crud"></a>
                 <br>
                 <h2 class="para_ver">Click para ver</h2>
-            </div>  
+            </div>
 
         </section>
-        
+
+        <section class="container_siscau">
+            <div class="controle__resmas">
+                <h1 class="titulo_siscau">SISCAU</h1>
+                <p class="paragrafo_siscau">Apresento o SISCAU, um sistema de controle financeiro exclusivo,
+                    desenvolvido
+                    por mim.</p>
+                <p class="paragrafo_siscau">Sistema desenvolvido para ter maior controle financeiro</p>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/ft_siscau/siscau1.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/ft_siscau/siscau2.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/ft_siscau/siscau3.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/ft_siscau/siscau4.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/ft_siscau/siscau5.jpeg" id="img_carrossel" class="d-block" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container_aviso">
+            <p class="saida">
+
+            </p>
+
+            <div class="container_button_github">
+                <a class="github-link" href="https://github.com/seu-usuario-do-github" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Meus Projetos no GitHub
+                </a>
+            </div>
+
+        </section>
+
         <footer class="rodape__projetos">
             <p class="rodape">Desenvolvido por João Victor de Sousa Ribeiro</p>
         </footer>
 
         <script src="js/projetos.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
+
 </html>
