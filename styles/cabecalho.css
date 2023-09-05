@@ -1,110 +1,16 @@
-.cabeçalho {
-    display: none;
+#cabecalho {
+    background-color: var(--cor-terciaria);
+}
+#button_menu {
+    border: none;
 }
 
-.cabecalho_principal{
-    background-color: var(--cor-terciaria);
-    border: 2px solid var(--cor-terciaria);
-    padding: 25px; /* Para centralizar o home e sobre no centro */
-} 
-
-.cabecalho__menu{
-    background-color: var(--cor-terciaria);
-    display: flex;
-
-}
-
-.cabecalho_menu_link{
+.nav-link {
+    font-size: 20px;
+    margin: 0 0 0 5em;
     color: var(--cor-primaria);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem; /* esse rem é para fazer o adapitamento é so dividir o px por 16 e colocar o rem */
-    font-weight: 500; /*  O valor numérico atribuído a essa propriedade varia de 100 (mais fino) a 900 (mais grosso), sendo 400 o valor padrão (normal). */
-    text-decoration: none; /* tirar a linha do link */
-    margin: 5%; /* espaço entre eles */
-    
 }
 
-.cabecalho_menu_link:hover{
-    font-size: 1.5rem;
-    color: blue ;
-    opacity: 0.7;
-}
-
-
-@media (max-width: 1200px) {
-
-    .cabecalho_principal{
-        display: none;
-    }
-
-    /* ----------------------------- Menu Hamburguer ---------------------------------- */
-
-.cabeçalho__menu-hamburguer {
-    width: 24px;
-    height: 24px;
-    background-image: url("../assets/Menu.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-}
-
-.cabeçalho {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-}
-
-.container__imagem {
-    padding: 1em;
-}
-
-.lista-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 40vw;
-}
-
-.container__botao:checked~.lista-menu {
-    display: block;
-}
-
-.lista-menu__titulo,
-.lista-menu__item {
-    padding: 1em;
-    background-color: rgb(14, 14, 14); /* cor de fundo menu */
-    border-radius: 15px;
-}
-
-.lista-menu__item {
-    display: inline-block;
-    display: block;
-    list-style: none; /* Tirar a bolinha do Link */
-}
-
-.lista-menu__titulo {
-    color: darkgoldenrod;
-    font-weight: 700;
-}
-
-.lista-menu__link {
-    color: #22D4FD;
-    text-decoration: none;
-    font-size: 26px;
-}
-
-
-.container__botao {
-    display: none;
-}
-
-    /* ----------------------------- Final Menu Hamburguer ---------------------------------- */
-
+#home_link_colocarcor {
+    color: var(--cor-primaria);
 }

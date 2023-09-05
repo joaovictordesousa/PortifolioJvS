@@ -148,11 +148,9 @@ font-size: 20px;
 .tituto_abilidade{
     text-align: center;
     font-size: 45px;
-
     background: linear-gradient(to right, #4ebaeb, #00A1E9, #0f1377);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 /* imagens */
@@ -181,7 +179,6 @@ font-size: 20px;
 #git{
     width: 10%;   /* largura da imagem */
     height: 10%;  /* tamanho da imagem */
-   
 }
 /* imagens */
 
@@ -189,7 +186,6 @@ font-size: 20px;
     justify-content: center;
     margin: 5% 20%;
     width: 100%;
-   
 }
 
 .apresentacao__conteudo_projetos{
@@ -202,14 +198,11 @@ font-size: 20px;
 .titulo{
    text-align: center;
     margin: 10px 0;
-
     background: linear-gradient(to right,#99d1ea, #3b5ae3, #020664);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     font-size: 2.25rem; 
     font-family: 'Krona One', sans-serif;
-
 }
 
 .apresentacao_texto{
@@ -239,9 +232,10 @@ font-size: 20px;
 @media (max-width: 1200px) {
 
     .apresentacao{
-        flex-direction: column-reverse;  /* Colocar a foto na linha de texto, ai coloquei o reverse pra imagem sair em cima pq ela tava em baixo */
-        width: 65%;
-        margin: 1em;
+        padding: 0;
+        flex-direction: column-reverse;  /* Colocar a imagem em cima do texto */
+        width: 90%;
+        margin: 1em auto;
     }
     .foto_lider{
         width: 45%;

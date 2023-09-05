@@ -1,135 +1,175 @@
 /* --------- Projeto ----------------- */
 body {
-    background: url(../assets/imagem_fundo_projetos.jpg);
+  background: url(../assets/imagem_fundo_projetos.jpg);
 }
 
 .controle__resmas {
-    text-align: center;
+  text-align: center;
 }
 
 .novacap__titulo {
-    padding: 1em;
-    color: dodgerblue;
+  padding: 1em;
+  color: dodgerblue;
 }
 
 .linguagens_usadas {
-    font-size: 20px;
-    color: red;
+  font-size: 20px;
+  color: red;
 }
 
 .divisao_com_cor {
-    padding: 1em 0;
-    background-color: rgb(3, 3, 3);
-    margin: 1em 0;
+  padding: 1em 0;
+  background-color: rgb(3, 3, 3);
+  margin: 1em 0;
 }
 
 .titulo_crud_js {
-    text-align: center;
-    font-size: 30px;
-    margin: 5em 0 0 0;
-    color: dodgerblue;
+  text-align: center;
+  font-size: 30px;
+  margin: 5em 0 0 0;
+  color: dodgerblue;
 }
 
 .imagem_crud_js {
-    text-align: center;
-    margin: 10px 0;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .imagem_crud_js img:hover {
-    border: 4px solid dodgerblue;
-    transition: all 0.5s ease;
-    padding: 5px;
+  border: 4px solid dodgerblue;
+  transition: all 0.5s ease;
+  padding: 5px;
 }
 
 .para_ver {
-    font-size: 17px;
-    color: grey;
+  font-size: 17px;
+  color: grey;
 }
 
 .rodape__projetos {
-    padding: 50em 0 0 0;
- }
+  padding: 50em 0 0 0;
+}
 
- .container_siscau {
-    margin: 5em 0;
- }
+.container_siscau {
+  margin: 5em 0;
+}
 
-    #img_carrossel{
-        margin: 0 auto;
-        width: 70%;
-    }
+.siscau {
+  margin: 3em auto;
+  width: 70%;
+}
+
+#img_carrossel {
+  margin: 0 auto;
+  width: 70%;
+}
 
 .titulo_siscau {
-    font-size: 30px;
-    text-align: center;
-    color: dodgerblue;
-    margin: 10px 0;
+  font-size: 30px;
+  text-align: center;
+  color: dodgerblue;
+  margin: 10px 0;
 }
 
 .paragrafo_siscau {
-    font-size: 20px;
-    text-align: center;
+  margin: 2 px 0;
+  font-size: 20px;
+  font-family: Arial, sans-serif; /* Família da fonte */
+  text-align: left; /* Alinhamento do texto (left, right, center, justify) */
+}
+
+.negritos_paragrafo {
+  color: dodgerblue;
 }
 
 .container_controle_resmas {
-    margin: 5em 0;
+  margin: 5em 0;
 }
 
 .saida {
-    font-size: 25px;
-    margin: 0 auto;
-    width: 70%;
+  font-size: 25px;
+  margin: 0 auto;
+  width: 70%;
 }
 
 /* Estilização para o link com ícone do GitHub */
 
 .container_button_github {
-    margin: 5em auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 5em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a.github-link {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  a.github-link i {
-    margin-right: 8px;
-  }
-  
-  a.github-link:hover {
-    background-color: #555;
-  }
-  
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a.github-link i {
+  margin-right: 8px;
+}
+
+a.github-link:hover {
+  background-color: #555;
+}
+
+#img_carrosel2 {
+  width: 70%;
+  margin: 0 auto;
+}
 
 @media (max-width: 1200px) {
-    /* -- projetos  --  */
+  /* -- projetos  --  */
+  #carouselExampleAutoplaying {
+    width: 97%;
+    margin: 0 auto;
+  }
 
-    .novacap__titulo {
-        text-align: center;
-    }
-    
-    .empresa__projeto {
-        width: 90%;
-        text-align: center;
-    }
+  #img_carrosel2 {
+    width: 100%;
+  }
 
-    .imagem_crud_js {
-        width: 80%;
-        margin: 0 auto;
-    }
+  #mudarcor {
+    background-color: rgb(224, 222, 222);
+  }
 
-     .rodape__projetos {
-        padding: 19em 0 0 0;
-        width: 100%;
-     }
+  .paragrafo_siscau {
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Família da fonte */
+    margin: 10px; /* Margens externas */
+    padding: 5px; /* Preenchimento interno */
+    text-align: left; /* Alinhamento do texto (left, right, center, justify) */
+    max-width: 400px; /* Largura máxima */
+  }
 
+  .siscau {
+    margin: 3em auto;
+    width: 90%;
+  }
+
+  .novacap__titulo {
+    text-align: center;
+  }
+
+  .empresa__projeto {
+    width: 90%;
+    text-align: center;
+  }
+
+  .imagem_crud_js {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .rodape__projetos {
+    padding: 19em 0 0 0;
+    width: 100%;
+  }
 }
