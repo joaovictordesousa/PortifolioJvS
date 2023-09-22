@@ -1,258 +1,279 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'); /*  fonte que baixei */
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap"); /*  fonte que baixei */
 @import url(carrocel.css);
 @import url(cabecalho.css);
 @import url(projetos.css);
 
 /* armazenar uma cor na variavel */
 :root {
-    --cor-primaria: #000000;  
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
-    --cor-hover: #272727;
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22d4fd;
+  --cor-hover: #272727;
 }
 /* armazenar uma cor na variavel */
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 }
-
 
 .logo_tipo {
-    width: 30%;
-    margin: 0 13em;
-    position: relative;
+  width: 30%;
+  margin: 0 13em;
+  position: relative;
 }
 
-.foto_lider{
- width: 35%;
- border-radius: 20px;
+.foto_lider {
+  width: 35%;
+  border-radius: 20px;
 
- transform: translateY(0px);
- animation: float 5s ease-in-out infinite;
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
-    0% {
-        transform: translateY(0%);
-    }
-    50% {
-        transform: translateY(-10%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
-.apresentacao{
-    padding: 3% 15%; /* Margem da pagina inteira | cabecalho e rodape 5% | canto 15% */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
-}
-.apresentacao__conteudo{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.apresentacao {
+  padding: 3% 15%; /* Margem da pagina inteira | cabecalho e rodape 5% | canto 15% */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+
+  opacity: 0; /* Inicialmente, o elemento está oculto */
+  animation: fade-in 1s ease-in-out forwards; /* Aplica a animação */
 }
 
-.apresentacao__conteudo__titulo{
-    font-size: 2.30rem; /* esse rem é para fazer o adapitamento é so dividir o px por 16 e colocar o rem */
-    font-family: 'Krona One', sans-serif;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Desloca o elemento para baixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Retorna o elemento à sua posição original */
+  }
+}
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.apresentacao__sobre{
-    background: linear-gradient(to right, #00A1E9, #0f1377, #020664);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-
-    font-size: 2.25rem; /* esse rem é para fazer o adapitamento é so dividir o px por 16 e colocar o rem */
-    font-family: 'Krona One', sans-serif;
+.apresentacao__conteudo__titulo {
+  font-size: 2.3rem; /* esse rem é para fazer o adapitamento é so dividir o px por 16 e colocar o rem */
+  font-family: "Krona One", sans-serif;
 }
 
-.titulo-destaque{
-    color:var(--cor-terciaria);
+/* ANIMAÇÃO DE CHEGADA */
+.animation_chegada {
+  opacity: 0; /* Inicialmente, o elemento está oculto */
+  animation: fade-in 1s ease-in-out forwards; /* Aplica a animação */
 }
 
-.apresentacao__conteudo__texto{
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Desloca o elemento para baixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Retorna o elemento à sua posição original */
+  }
 }
 
-
-.apresentacao__conteudo__texto_local{
-    font-size: 1.7rem;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-.apresentacao__links{
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    align-items: center; 
-    gap: 32px;
-}
-.apresentacao__links__subtitulo{
-    color: var(--cor-terciaria);;
-    font-size: 35px;
-}
+/* FINAL ANIMAÇÃO DE CHEGADA */
 
 
-.apresentacao__links__link{
-    /* background-color: #22D4FD; */
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border: 2px solid var(--cor-terciaria);
-    width: 65%;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 1.5rem;
-    font-weight: 600; /* grossura na letra */
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: 'Montserrat', sans-serif;
+.apresentacao__sobre {
+  background: linear-gradient(to right, #00a1e9, #0f1377, #020664);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2.25rem; /* esse rem é para fazer o adapitamento é so dividir o px por 16 e colocar o rem */
+  font-family: "Krona One", sans-serif;
 }
 
-.apresentacao__links__link:hover{
-    background-color: var(--cor-hover);
-}
-.rodape{
-text-align: center;
-background-color: var(--cor-terciaria);
-color: var(--cor-primaria);
-font-family: 'Montserrat', sans-serif;
-border: 2px solid var(--cor-terciaria);
-border-width: 22px;
-font-size: 20px;
+.titulo-destaque {
+  color: var(--cor-terciaria);
 }
 
-.email{
-    margin: 0 2%;
-    width: 10%;
-    border-radius: 20%;
+.apresentacao__conteudo__texto {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
-.tituto_abilidade{
-    text-align: center;
-    font-size: 45px;
-    background: linear-gradient(to right, #4ebaeb, #00A1E9, #0f1377);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.apresentacao__conteudo__texto_local {
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.apresentacao__links__subtitulo {
+  color: var(--cor-terciaria);
+  font-size: 35px;
+}
+
+.apresentacao__links__link {
+  /* background-color: #22D4FD; */
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid var(--cor-terciaria);
+  width: 65%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600; /* grossura na letra */
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__links__link:hover {
+  background-color: var(--cor-hover);
+}
+.rodape {
+  text-align: center;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid var(--cor-terciaria);
+  border-width: 22px;
+  font-size: 20px;
+}
+
+.email {
+  margin: 0 2%;
+  width: 10%;
+  border-radius: 20%;
+}
+
+.tituto_abilidade {
+  text-align: center;
+  font-size: 45px;
+  background: linear-gradient(to right, #4ebaeb, #00a1e9, #0f1377);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* imagens */
-.abilidades_imgs{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding: 8% 25%;
+.abilidades_imgs {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 8% 25%;
 }
-#html{
-    width: 10%;    /* largura da imagem */
-    height: 10%;   /* tamanho da imagem */
+#html {
+  width: 10%; /* largura da imagem */
+  height: 10%; /* tamanho da imagem */
 }
-#css{
-    width: 10%;   
-    height: 10%;
+#css {
+  width: 10%;
+  height: 10%;
 }
-#java{
-    width: 10%;   
-    height: 10%;
+#java {
+  width: 10%;
+  height: 10%;
 }
-#react{
-    width: 10%;   
-    height: 10%;
+#react {
+  width: 10%;
+  height: 10%;
 }
-#git{
-    width: 10%;   /* largura da imagem */
-    height: 10%;  /* tamanho da imagem */
+#git {
+  width: 10%; /* largura da imagem */
+  height: 10%; /* tamanho da imagem */
 }
 /* imagens */
 
-.projetos{
-    justify-content: center;
-    margin: 5% 20%;
-    width: 100%;
+.projetos {
+  justify-content: center;
+  margin: 5% 20%;
+  width: 100%;
 }
 
-.apresentacao__conteudo_projetos{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.apresentacao__conteudo_projetos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.titulo{
-   text-align: center;
-    margin: 10px 0;
-    background: linear-gradient(to right,#99d1ea, #3b5ae3, #020664);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2.25rem; 
-    font-family: 'Krona One', sans-serif;
+.titulo {
+  text-align: center;
+  margin: 10px 0;
+  background: linear-gradient(to right, #99d1ea, #3b5ae3, #020664);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.25rem;
+  font-family: "Krona One", sans-serif;
 }
 
-.apresentacao_texto{
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5%;
-    text-decoration: none;
-    color: white;
-
+.apresentacao_texto {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5%;
+  text-decoration: none;
+  color: white;
 }
 
-.descricao_ribeiro{
-    font-size: 25px;
-   
-    
+.descricao_ribeiro {
+  font-size: 25px;
 }
-.descricao_ribeiro_sobre{
-    font-size: 20px;
-    padding: 1% 0;
-    color: #a09b9b;
+.descricao_ribeiro_sobre {
+  font-size: 20px;
+  padding: 1% 0;
+  color: #a09b9b;
 }
-.advocacia:hover{
-    width: 120%;
+.advocacia:hover {
+  width: 120%;
 }
-
 
 @media (max-width: 1200px) {
+  .apresentacao {
+    padding: 0;
+    flex-direction: column-reverse; /* Colocar a imagem em cima do texto */
+    width: 90%;
+    margin: 1em auto;
+  }
+  .foto_lider {
+    width: 45%;
+    border-radius: 25px;
+  }
 
-    .apresentacao{
-        padding: 0;
-        flex-direction: column-reverse;  /* Colocar a imagem em cima do texto */
-        width: 90%;
-        margin: 1em auto;
-    }
-    .foto_lider{
-        width: 45%;
-        border-radius: 25px;
-    }
+  .logo_tipo {
+    display: none;
+  }
 
-    .logo_tipo {
-        display: none;
-    }
-   
-    .apresentacao__conteudo{
-        width: auto; /* serve para usar todo o espaço menos o do 5% do padding */
-    }
-  
-    .email{
-        width: 20%;
-    }      
+  .apresentacao__conteudo {
+    width: auto; /* serve para usar todo o espaço menos o do 5% do padding */
+  }
 
+  .email {
+    width: 20%;
+  }
 }
-

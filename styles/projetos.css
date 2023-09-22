@@ -3,6 +3,24 @@ body {
   background: url(../assets/imagem_fundo_projetos.jpg);
 }
 
+.container_completo_projetos {
+
+    opacity: 0; /* Inicialmente, o elemento está oculto */
+    animation: fade-in 1s ease-in-out forwards; /* Aplica a animação */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Desloca o elemento para baixo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Retorna o elemento à sua posição original */
+    }
+}
+
+
 .controle__resmas {
   text-align: center;
 }
@@ -33,12 +51,12 @@ body {
 .imagem_crud_js {
   text-align: center;
   margin: 10px 0;
+  transition: transform 0.2s;
+
 }
 
 .imagem_crud_js img:hover {
-  border: 4px solid dodgerblue;
-  transition: all 0.5s ease;
-  padding: 5px;
+transform: translate(0, -1rem);
 }
 
 .para_ver {
