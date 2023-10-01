@@ -4,28 +4,52 @@ body {
 }
 
 .container_completo_projetos {
-
-    opacity: 0; /* Inicialmente, o elemento está oculto */
-    animation: fade-in 1s ease-in-out forwards; /* Aplica a animação */
+  opacity: 0; /* Inicialmente, o elemento está oculto */
+  animation: fade-in 1s ease-in-out forwards; /* Aplica a animação */
 }
 
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(20px); /* Desloca o elemento para baixo */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0); /* Retorna o elemento à sua posição original */
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Desloca o elemento para baixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Retorna o elemento à sua posição original */
+  }
 }
 
+.container_titulo {
+  text-align: center;
+}
 
+.titulo_projetos_front {
+  font-size: 30px;
+  margin: 3em;
+  color: white;
+  display: inline-block; /* PARA A LINHA OCUPAR SOMENTE O TAMANHO DO TITULO */
+  border-bottom: 2px solid dodgerblue;
+}
+
+.titulo_projetos_back {
+  font-size: 30px;
+  margin: 3em;
+  color: white;
+  display: inline-block;
+  border-bottom: 2px solid dodgerblue;
+}
+
+.paragrafo_controle {
+  width: 70%;
+  margin: 1em auto;
+  font-size: 20px;
+}
 .controle__resmas {
   text-align: center;
 }
 
 .novacap__titulo {
+  font-size: 20px;
   padding: 1em;
   color: dodgerblue;
 }
@@ -33,6 +57,10 @@ body {
 .linguagens_usadas {
   font-size: 20px;
   color: red;
+}
+
+.empresa {
+  color: dodgerblue;
 }
 
 .divisao_com_cor {
@@ -48,15 +76,13 @@ body {
   color: dodgerblue;
 }
 
-.imagem_crud_js {
-  text-align: center;
-  margin: 10px 0;
-  transition: transform 0.2s;
-
+.imagem_cinetag {
+  width: 100%;
 }
 
-.imagem_crud_js img:hover {
-transform: translate(0, -1rem);
+.imagem_alurabook {
+  width: 100%;
+  padding: 1em;
 }
 
 .para_ver {
@@ -65,7 +91,7 @@ transform: translate(0, -1rem);
 }
 
 .rodape__projetos {
-  padding: 50em 0 0 0;
+  padding: 3em 0 0 0;
 }
 
 .container_siscau {
@@ -143,6 +169,55 @@ a.github-link:hover {
   margin: 0 auto;
 }
 
+/* ------------------- Projetos Simples --------------- */
+#card_projetosSimples {
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  color: white;
+  width: 27rem;
+  transition: transform 0.5s;
+}
+
+#card_projetosSimples:hover {
+  transform: translate(0, -5rem);
+}
+
+#card_projetosSimples2 {
+  margin: 5em 0;
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  color: white;
+  width: 27rem;
+  transition: transform 0.5s;
+}
+
+#card_projetosSimples2:hover {
+  transform: translate(0, -5rem);
+}
+
+.imagem_crud_js {
+  width: 100%;
+}
+
+.para_ver {
+  text-align: center;
+}
+
+#SobreTitulo {
+  color: rgb(221, 2, 2);
+}
+
+.ContainerProSimples {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.ContainerProSimple2 {
+  display: flex;
+}
+/* ------------------- Projetos Simples --------------- */
+
 @media (max-width: 1200px) {
   /* -- projetos  --  */
   #carouselExampleAutoplaying {
@@ -167,6 +242,10 @@ a.github-link:hover {
     max-width: 400px; /* Largura máxima */
   }
 
+  .ContainerProSimples {
+    display: block;
+  }
+
   .siscau {
     margin: 3em auto;
     width: 90%;
@@ -181,13 +260,19 @@ a.github-link:hover {
     text-align: center;
   }
 
-  .imagem_crud_js {
+  #card_projetosSimples {
+    background-color: transparent;
+    border: 2px solid dodgerblue;
+    margin: 2em auto;
+    color: white;
     width: 80%;
-    margin: 0 auto;
   }
 
-  .rodape__projetos {
-    padding: 19em 0 0 0;
-    width: 100%;
+  #card_projetosSimples2 {
+    background-color: transparent;
+    border: 2px solid dodgerblue;
+    margin: 1em auto;
+    color: white;
+    width: 80%;
   }
 }

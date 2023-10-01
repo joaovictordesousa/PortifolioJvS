@@ -158,6 +158,8 @@ body {
   background-color: var(--cor-hover);
 }
 .rodape {
+  margin: 0;
+  padding: 0;
   text-align: center;
   background-color: var(--cor-terciaria);
   color: var(--cor-primaria);

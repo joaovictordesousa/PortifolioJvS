@@ -62,10 +62,10 @@ b {
 .ListaDeAbilidade {
   font-size: 25px;
   color: white;
-  margin: 1em 0;
+  margin: 1em 2em;
   background-color: dodgerblue;
   text-align: center;
-  padding: 0 1em;
+  padding: 16px 2em;
   border-radius: 10px;
   list-style-type: none;
   transition: transform 0.5s;
@@ -79,7 +79,18 @@ b {
   display: none;
 }
 
-@media (max-width: 550px) {
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .abilidades {
+    gap: 1em;
+  }
+
+  .ListaDeAbilidade {
+    margin: 1em 0;
+    padding: 10px 1em;
+  }
+}
+  
+@media (max-width: 600px) {
   #card {
     width: 90%;
   }
@@ -103,14 +114,17 @@ b {
 
   .container_conhecimento_celular {
     display: block;
-    margin: 10em auto;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 1.5em 0 0;
   }
 
   .ListaDeAbilidade_celular {
     color: white;
-    width: 70%;
+    width: 50%;
+    font-size: 17px;
     margin: 1em;
-    padding: 1em 0;
+    padding: 1em 2em;
     background-color: dodgerblue;
     text-align: center;
     border-radius: 10px;
