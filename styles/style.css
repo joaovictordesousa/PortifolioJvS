@@ -2,6 +2,7 @@
 @import url(carrocel.css);
 @import url(cabecalho.css);
 @import url(projetos.css);
+@import url(experiencia.css);
 
 /* armazenar uma cor na variavel */
 :root {
@@ -100,7 +101,6 @@ body {
 }
 
 /* FINAL ANIMAÇÃO DE CHEGADA */
-
 
 .apresentacao__sobre {
   background: linear-gradient(to right, #00a1e9, #0f1377, #020664);
@@ -226,9 +226,7 @@ body {
 .titulo {
   text-align: center;
   margin: 10px 0;
-  background: linear-gradient(to right, #99d1ea, #3b5ae3, #020664);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: dodgerblue;
   font-size: 2.25rem;
   font-family: "Krona One", sans-serif;
 }

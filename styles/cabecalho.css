@@ -9,8 +9,20 @@
     font-size: 20px;
     margin: 0 0 0 5em;
     color: var(--cor-primaria);
+    transition: transform 0.5s; /* Faz pular */
+} 
+
+.nav-link:hover {
+    color: blue;
+    transform: translate(0, -0.6rem); /* Faz pular parte 2*/
 }
 
 #home_link_colocarcor {
     color: var(--cor-primaria);
+    transition: transform 0.5s;
+}
+
+#home_link_colocarcor:hover {
+    color: blue;
+    transform: translate(0, -0.6rem);
 }

@@ -1,0 +1,123 @@
+.titulo_MinhasExperiencias {
+  text-align: center;
+  margin: 4em 0 2em 0;
+  color: dodgerblue;
+  font-family: "Krona One", sans-serif;
+}
+
+#card {
+  background-color: transparent;
+  border: 0.2px solid gray;
+  margin: auto;
+  color: white;
+  width: 30rem;
+}
+
+#TituloCard {
+  color: #194eb8;
+  font-size: 30px;
+}
+
+.card-img-top {
+  width: 90%;
+  margin: 5px auto;
+}
+
+.DataDeTrabalho {
+  font: 900;
+  font-size: 17px;
+  background-color: #dc3545;
+  width: 50%;
+  margin: 1em 0 1em 1em;
+  border-radius: 10px;
+  padding: 0 2em;
+}
+
+#SobreTitulo_card {
+  color: #dc3545;
+  margin: 2em 0;
+}
+
+b {
+  color: dodgerblue;
+}
+
+.container_conhecimento {
+  margin: 20em 0;
+}
+
+.titulo_conhecimentos {
+  text-align: center;
+  margin: 50px 0;
+  color: dodgerblue;
+  font-family: "Krona One", sans-serif;
+}
+
+.abilidades {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+}
+
+.ListaDeAbilidade {
+  font-size: 25px;
+  color: white;
+  margin: 1em 0;
+  background-color: dodgerblue;
+  text-align: center;
+  padding: 0 1em;
+  border-radius: 10px;
+  list-style-type: none;
+  transition: transform 0.5s;
+}
+
+.ListaDeAbilidade:hover {
+  transform: translate(0, -0.6rem);
+}
+
+.container_conhecimento_celular {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  #card {
+    width: 90%;
+  }
+
+  .DataDeTrabalho {
+    background-color: #dc3545;
+    margin: 1em auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 1em;
+  }
+
+  .ListaDeAbilidade {
+    display: grid;
+  }
+
+  .container_conhecimento {
+    display: none;
+  }
+
+  .container_conhecimento_celular {
+    display: block;
+    margin: 10em auto;
+  }
+
+  .ListaDeAbilidade_celular {
+    color: white;
+    width: 70%;
+    margin: 1em;
+    padding: 1em 0;
+    background-color: dodgerblue;
+    text-align: center;
+    border-radius: 10px;
+    list-style-type: none;
+  }
+
+  .ul_celular {
+    display: flex;
+  }
+}
