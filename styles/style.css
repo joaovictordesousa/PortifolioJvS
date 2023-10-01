@@ -254,6 +254,12 @@ body {
 }
 
 @media (max-width: 1200px) {
+
+  .rodape {
+    margin: 0;
+    padding: 0;
+  }
+
   .apresentacao {
     padding: 0;
     flex-direction: column-reverse; /* Colocar a imagem em cima do texto */
