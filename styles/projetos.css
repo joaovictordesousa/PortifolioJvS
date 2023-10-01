@@ -219,6 +219,14 @@ a.github-link:hover {
 /* ------------------- Projetos Simples --------------- */
 
 @media (max-width: 1200px) {
+
+  #card_projetosSimples:hover {
+    transform: none;
+  }
+
+  #card_projetosSimples2:hover {
+    transform: none;
+  }
   /* -- projetos  --  */
   #carouselExampleAutoplaying {
     width: 97%;
