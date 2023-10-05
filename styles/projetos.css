@@ -33,7 +33,6 @@ body {
 
 .titulo_projetos_back {
   font-size: 30px;
-  margin: 3em;
   color: white;
   display: inline-block;
   border-bottom: 2px solid dodgerblue;
@@ -88,6 +87,11 @@ body {
 .para_ver {
   font-size: 17px;
   color: grey;
+}
+
+.section_projetos_simples {
+  display: flex;
+  justify-content: center;
 }
 
 .rodape__projetos {
@@ -210,6 +214,7 @@ a.github-link:hover {
 .ContainerProSimples {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2em;
 }
 
@@ -218,7 +223,86 @@ a.github-link:hover {
 }
 /* ------------------- Projetos Simples --------------- */
 
+/* ----------------- PROJETOS BACK --------------- */
+
+.section_pro_novacap  {
+  width: 90%; 
+  margin: auto;
+}
+
+#card_projetosBack {
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  color: white;
+  width: 100%;
+}
+
+#card_projetosBack2 {
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  color: white;
+  width: 50%;
+}
+
+#carouselExample {
+  padding: 1em;
+}
+
+#carouselExampleAutoplaying {
+  padding: 1em;
+}
+
+.link_doControleDeResmas {
+  text-decoration: none;
+  color: white;
+}
+
+.container_pro_novacap {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.card_text_siscau {
+  font-size: 15px;
+}
+
+.ContainerProBack2 {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.carousel-control-prev-icon {
+  background-color: #555;
+}
+
+.carousel-control-next-icon {
+  background-color: #555;
+}
+
+#myCarousel {
+  padding: 2em;
+}
+/* ----------------- PROJETOS BACK --------------- */
+
 @media (max-width: 1200px) {
+
+  .ContainerProBack2 {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #card_projetosBack2 {
+    width: 80%;
+  }
+
+  .section_pro_novacap  {
+    width: 100%; 
+    margin: auto;
+  }
 
   #card_projetosSimples:hover {
     transform: none;
@@ -282,5 +366,15 @@ a.github-link:hover {
     margin: 1em auto;
     color: white;
     width: 80%;
+  }
+
+  #card_projetosBack {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  .container_pro_novacap {
+    display: block;
+    gap: 2em;
   }
 }
